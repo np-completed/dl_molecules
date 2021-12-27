@@ -15,6 +15,7 @@ moviepy==1.0.3
 networkx==2.5.1
 pygraphviz==1.7
 MDAnalysis==1.1.1
+rdkit-pypi
 emlp==1.0.2
 tensorflow-probability==0.13.0
 dm-haiku
