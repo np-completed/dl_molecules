@@ -7,21 +7,22 @@ Create a new project using Python 3.9, specifically:
 
 `conda create --name dl_molecules python=3.9`
 
+## Add libraries
+
 ```
 conda config --add channels conda-forge
-```
+### See the channels you currently have added in ~/.condarc or by running conda config --show
 
-## Add libraries
-```
-conda install --yes --name dl_molecules MDAnalysis MDAnalysisTests
+conda install --yes --name dl_molecules matplotlib MDAnalysis MDAnalysisTests numpy pandas pillow 
 
-### matplotlib numpy pandas pillow
-conda install --yes --name dl_molecules jupyter-book  jax jaxlib moviepy networkx pygraphviz pydot rdkit seaborn tabulate tensorflow  mordred[full]   emlp tensorflow-probability dm-haiku selfies  pre-commit
+conda install --yes --name dl_molecules glueviz jupyter jupyter-book  jax jaxlib  networkx pygraphviz pydot rdkit seaborn tabulate tensorflow  mordred[full]  tensorflow-probability dm-haiku selfies  pre-commit
 
 
 ### pip install
-pip install tensorflowjs emlp
+pip install emlp tensorflowjs
 
+pip install myst-nb  # Sphinx extension
+pip install moviepy  
 ```
 
 
